@@ -13,6 +13,7 @@
 body {
     color: var(--tertiary-color);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #ededf6;
 }
 
 header {
@@ -76,4 +77,35 @@ header nav ul li a {
     background-color: var(--primary-color);
     padding: 0.45vw;
     font-size: 1.79vw;
+}
+
+.anchor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2.57vw 6.7vw 0 0;
+}
+
+.section-title {
+    padding: 0 1.12vw 0 4.46vw;
+    width: 22.99vw;
+}
+
+.section-title h2 {
+    font-size: 4.13vw;
+    color: var(--tertiary-color);
+    text-align: right;
+    line-height: 1.1;
+}
+
+.content {
+    width: calc(100% - 22.99vw);
+    padding-left: 2.57vw;
+    border-left: 0.33vw solid var(--tertiary-color);
+}
+
+.content p {
+    font-size: 1.12vw;
+    line-height: 1.7;
 }
