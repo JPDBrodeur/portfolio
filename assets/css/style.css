@@ -58,3 +58,22 @@ header nav ul li a {
     text-decoration: none;
     border-bottom: 0.33vw solid var(--primary-color);
 }
+
+.hero {
+    height: 14.68vw;
+    padding: 1.67vw 6.14vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url("../images/hero.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.subtitle {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 0.45vw;
+    font-size: 1.79vw;
+}
