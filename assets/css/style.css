@@ -118,23 +118,38 @@ header nav ul li a {
 }
 
 #showcase article {
-    border: 4px solid var(--primary-color);
-    width: calc(50% - 5px);
-    height: 100px;
-    margin-bottom: 10px;
+    border: 0.39vw solid var(--primary-color);
+    width: calc(50% - 0.56vw);
+    height: 11.16vw;
+    margin-bottom: 1.12vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-end;
 }
 
-#showcase article {
-    border: 4px solid var(--primary-color);
-    width: calc(50% - 5px);
-    height: 100px;
-    margin-bottom: 10px;
+#showcase article:first-child {
+    height: 29.88vw;
+    width: 100%;
 }
 
-#showcase article:first-child {
-    width: 100%;
+#showcase article:last-child, #showcase article:nth-last-child(2) {
+    margin-bottom: 0px;
+}
+
+.app-description {
+    background-color: var(--primary-color);
+    padding: 0.78vw 0.45vw 0.22vw 0.78vw;
+    margin-bottom: 1.45vw;
+}
+
+.app-description h3 {
+    font-size: 2.01vw;
+    color: var(--secondary-color)
+}
+
+.app-description p {
+    font-size: 1vw;
+    line-height: 2.3;
+    color: var(--secondary-color)
 }
