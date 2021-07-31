@@ -109,3 +109,32 @@ header nav ul li a {
     font-size: 1.12vw;
     line-height: 1.7;
 }
+
+#showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#showcase article {
+    border: 4px solid var(--primary-color);
+    width: calc(50% - 5px);
+    height: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+#showcase article {
+    border: 4px solid var(--primary-color);
+    width: calc(50% - 5px);
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#showcase article:first-child {
+    width: 100%;
+}
