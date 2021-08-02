@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    padding: none;
+}
+
+/* CSS Variables */
 :root {
     --primary-color: #92CCCD;
     --secondary-color: #31343D;
@@ -17,6 +23,7 @@ body {
     margin-bottom: 14px;
 }
 
+/* Header Styles */
 header {
     padding: 7px 60px 12px 0;
     background-color: var(--secondary-color);
@@ -53,9 +60,9 @@ header nav ul li {
     padding: 6px;
 }
 
-header nav ul li a {
+.nav-btn {
     padding: 3px 7px;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--primary-color);
     text-decoration: none;
     border-bottom: 4px solid var(--primary-color);
@@ -66,11 +73,12 @@ header nav ul li a {
     transition: background-position 0.25s ease-in-out;
 }
 
-header nav ul li a:hover {
+.nav-btn:hover {
     background-position: bottom;
     color: var(--secondary-color);
 }
 
+/* Hero Styles */
 .hero {
     height: 270px;
     padding: 18px 66px;
@@ -90,6 +98,7 @@ header nav ul li a:hover {
     font-size: 19px;
 }
 
+/* Main Page Styles */
 .anchor {
     display: flex;
     flex-wrap: wrap;
@@ -121,6 +130,7 @@ header nav ul li a:hover {
     line-height: 1.7;
 }
 
+/* Work Section Styles */
 #showcase {
     display: flex;
     flex-wrap: wrap;
@@ -136,12 +146,9 @@ header nav ul li a:hover {
     position: relative;
 }
 
-.application:first-child {
-    width: 100%;
-}
-
 .app-image {
-    height: 120px;
+    display: block;
+    height: 160px;
     width: 100%;
     object-fit: cover;
     object-position: top;
@@ -153,36 +160,43 @@ header nav ul li a:hover {
     transition: opacity .5s ease-out;
 }
 
+.application a div div {
+    background-color: var(--primary-color);
+    padding: 8px;
+    position: absolute;
+    top: 70px;
+}
+
+/* First Application Styles */
+.application:first-child {
+    width: 100%;
+}
 .application:first-child a div img {
     height: 320px;
     width: 100%;
 }
 
-.application a div div {
-    background-color: var(--primary-color);
-    padding: 8px 5px 2px 8px;
-    position: absolute;
-    top: 40px;
-}
 .application:first-child a div div {
-    top: 240px;
+    top: 230px;
 }
 
+/* Align bottom borders with left-hand line */
 .application:last-child, .application:nth-last-child(2) {
     margin-bottom: 0px;
 }
 
 .app-description h3 {
-    font-size: 22px;
+    font-size: 24px;
     color: var(--secondary-color)
 }
 
 .app-description p {
-    font-size: 11px;
-    line-height: 2.3;
+    font-size: 16px;
+    line-height: 1.7;
     color: var(--secondary-color)
 }
 
+/* Contact Info Section Styles */
 #contact-info ul {
     display: flex;
     flex-wrap: wrap;
@@ -198,9 +212,9 @@ header nav ul li a:hover {
 }
 
 
-#contact-info ul li a {
+.contact-btn {
     padding: 3px 7px;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--secondary-color);
     text-decoration: none;
     border-bottom: 4px solid var(--tertiary-color);
@@ -213,10 +227,4 @@ header nav ul li a:hover {
 #contact-info ul li a:hover {
     background-position: bottom;
     color: #ededf6;
-}
-
-.app-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
