@@ -332,10 +332,10 @@ header nav ul li {
     }
 
     .section-title h2 {
+        /* Make title text vertical on mobile */
         writing-mode: vertical-rl;
         transform: rotate(-180deg);
         padding: 0;
-        width:
     }
 
     .content {
