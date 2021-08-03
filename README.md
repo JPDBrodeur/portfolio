@@ -3,6 +3,13 @@
 A professional portfolio for prospective employers  
 An Advanced CSS Challenge
 
+
+## Screenshot
+![View Screenshot](screenshot.png)
+
+## Deployed Application Link
+[https://jpdbrodeur.github.io/](https://jpdbrodeur.github.io/)
+
 ## User Story
 
 AS AN employer  
@@ -23,10 +30,4 @@ THEN that application's image should be larger in size than the others
 WHEN I click on the images of the applications  
 THEN I am taken to that deployed application  
 WHEN I resize the page or view the site on various screens and devices  
-THEN I am presented with a responsive layout that adapts to my viewport  
-
-## Screenshot
-![View Screenshot](screenshot.png)
-
-## Deployed Application Link
-[https://jpdbrodeur.github.io/](https://jpdbrodeur.github.io/)
+THEN I am presented with a responsive layout that adapts to my viewport
