@@ -151,7 +151,7 @@ header nav ul li {
     height: 160px;
     width: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: top left;
     opacity: 0.67;
 }
 
@@ -167,7 +167,7 @@ header nav ul li {
     top: 70px;
 }
 
-/* First Application Styles */
+/* Featured Program Styles */
 .application:first-child {
     width: 100%;
 }
@@ -203,14 +203,13 @@ header nav ul li {
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    margin: 7px 0;
+    margin: 0 0 7px 0;
     padding: 2.5vw 0;
 }
 
 #contact-info ul li {
     padding: 6px;
 }
-
 
 .contact-btn {
     padding: 3px 7px;
@@ -227,4 +226,140 @@ header nav ul li {
 #contact-info ul li a:hover {
     background-position: bottom;
     color: #ededf6;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header h1, .section-title h2 {
+        font-size: 38px;
+    }
+
+    .nav-btn, .contact-btn {
+        font-size: 17px;
+    }
+
+    .anchor {
+        margin-right: 60px;
+    }
+    
+    .section-title {
+        width: 200px;
+    }
+
+    .content {
+        width: calc(100% - 200px)
+    }
+    .app-description h3 {
+        font-size: 20px;
+    }
+
+    .app-description p {
+        font-size: 13px;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+        padding-right: 0;
+    }
+    
+    header h1 {
+        padding-right: 60px;
+    }
+    
+    nav {
+        padding: 0 25px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .application {
+        width: 100%;
+    }
+
+    .application:first-child a div img {
+        height: 240px;
+    }
+
+    .application:first-child a div div {
+        top: 150px;
+    }
+
+    .application:nth-last-child(2) {
+        margin-bottom: 14px;
+    }
+
+    #contact-info ul {
+        justify-content: flex-start;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    header h1 {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    .nav-btn, .contact-btn {
+        border-bottom: 2px solid;
+    }
+
+    .hero {
+        padding: 20px 20px 20px 160px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    .anchor {
+        margin-right: 0px;
+    }
+
+    .section-title {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 60px;
+    }
+
+    .section-title h2 {
+        writing-mode: vertical-rl;
+        transform: rotate(-180deg);
+        padding: 0;
+        width:
+    }
+
+    .content {
+        width: calc(100% - 60px);
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .application {
+        border: 2px solid var(--primary-color);
+    }
+    .application a div img {
+        height: 152px;
+    }
+
+    .application:first-child a div img {
+        height: 228px;
+    }
+
+    #contact-info ul {
+        margin-bottom: 60px;
+    }
+
+    #contact-info ul li {
+        margin-bottom: 10px;
+    }
 }
